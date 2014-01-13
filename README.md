@@ -44,39 +44,33 @@ Alright, we’ve heard enough talk about **Element**, lets see it in action! Bel
 ### Syntax
 
 ```csharp
-//Create a div element
+// Create a div element
 Element container = Element.Create("div");
 
-//Create a div with a class name
+// Create a div with a class name
 Element container = Element.Create("div.container");
 
-//Create a div with a class name and an id
-Element container = Element .Create("div#myContainer.container");
+// Create a div with a class name and an id
+Element container = Element.Create("div#myContainer.container");
 
-//Create an element with some attributes
+// Create an element with some attributes
 Element button = Element.Create("button", "button-name", "myButton", "button-value", "4");
 
-//Add children to an element
+// Add children to an element
 button.Add(
     Element.Create("span").Add("My Button")
 );
 
-//Create more complex node structures in one statement
+// Create more complex node structures in one statement
 Element container = Element.Create("div.container").Add(
 	Element.Create("ul").Add(
-		Element.Create("li").Add(
-			"One"
-		),
-		Element.Create("li").Add(
-			"Two"
-		),
-		Element.Create("li").Add(
-			"Three"
-		)
+		Element.Create("li").Add("One"),
+		Element.Create("li").Add("Two"),
+		Element.Create("li").Add("Three")
 	)
 );
 
-//Methods can return Elements
+// Methods can return Elements
 public static Element RenderButton(string buttonText)
 {
 	return Element.Create("button.btn").Add(
@@ -84,9 +78,10 @@ public static Element RenderButton(string buttonText)
 	);
 }
 
-//And we can modify those elements after the fact
+// And we can modify those elements after the fact
 Element button = MyClass.RenderButton("My Button");
-if(conditional){
+if (conditional) 
+{
 	button.AddClass("super-button");
 }
 ```
@@ -96,19 +91,16 @@ if(conditional){
 Aside from using simple if statements to do things like add classes, we can incorporate logic within nested statements
 
 ```csharp
-//An example of adding  children conditionally
+// An example of adding  children conditionally
 Element container = Element.Create("div.container").Add(
 	Element.Create("h1").Add("Title"),
 	conditional ? RenderContent() : RenderErrorContent(),
-	Element.Create("div.footer").Add(
-		"Some footer content"
-	)
+	Element.Create("div.footer").Add("Some footer content")
 );
 
-//If a null value is added to an element, it is ignored
+// If a null value is added to an element, it is ignored
 Element container = Element.Create("div.container").Add(
 	conditional ? RenderContent() : null
-    
 );
 ```
 
@@ -116,9 +108,10 @@ Element container = Element.Create("div.container").Add(
 #### Looping
 
 ```csharp
-//Simple loop example
+// Simple loop example
 Element list = Element.Create("ul");
-for(string name in names)
+
+foreach (string name in names)
 {
 	list.Add(
 		Element.Create("li").Add(name)
@@ -131,7 +124,7 @@ for(string name in names)
 We can take iteration to the next step by using linq statements in our Element statements
 
 ```csharp
-//Iteratively adding elements using linq
+// Iteratively adding elements using linq
 Element list = Element.Create("ul).Add(
 	from item
 	in items
@@ -146,7 +139,7 @@ Because we use Element with the .Net MVC framework, we need to be able to output
 
 ```csharp
 Element myElement = Element.Create("html").Add(
-	//the rest of your page content added here
+	// Add the rest of your page content here
 );
 string html = myElement.Render().ToString();
 ```
@@ -157,7 +150,7 @@ In this scenario, we will also want to output the doctype before we write out HT
 public ActionResult Content(IRenderable m)
 {
 	string docType = @"<!DOCTYPE html>";
-	Response.Write(docType );
+	Response.Write(docType);
 	return Content(m.Render().ToString());
 }
 ```
@@ -168,7 +161,7 @@ Finally, our controller actions will look something like the following:
 public ActionResult Index()
 {
 	Element myElement = Element.Create("html").Add(
-		//the rest of your page content added here
+		// Add the rest of your page content here
 	);
 	return Content(myElement);
 }
