@@ -31,7 +31,7 @@ Stepping in and out of HTML to insert dynamic values inevitably gets messy. Ther
 
 ### Easy to Manipulate
 
-Because Elements are objects rather than strings, we can easily do things like add classes to them, modify attributes or append children to them throughout our program. Similarly, we can pass references to these objects between classes as we need. 
+Because Elements are objects rather than strings, we can easily do things like add classes to them, modify attributes or append children to them throughout our program. Similarly, we can pass references to these objects between objects as we need. 
 
 ### Inheritance in Views
 
@@ -118,7 +118,7 @@ Element container = Element.Create("div.container").Add(
 ```csharp
 //Simple loop example
 Element list = Element.Create("ul");
-for(string name in names)
+foreach(string name in names)
 {
 	list.Add(
 		Element.Create("li").Add(name)
