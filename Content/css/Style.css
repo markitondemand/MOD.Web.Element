@@ -1,0 +1,68 @@
+body{
+	color:#666;
+}
+.site{
+	background:#fff;
+	width:100%;
+	z-index:1;
+}
+.site h1 .container{
+	background:#fff;
+}
+.site h1{
+	color:#ccc;
+}
+.site h1 em{
+	color:#226092;
+	font-style:normal;
+}
+.site h2{
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #005082),
+		color-stop(1, #1D6799)
+	);
+	background-image: -o-linear-gradient(bottom, #005082 0%, #1D6799 100%);
+	background-image: -moz-linear-gradient(bottom, #005082 0%, #1D6799 100%);
+	background-image: -webkit-linear-gradient(bottom, #005082 0%, #1D6799 100%);
+	background-image: -ms-linear-gradient(bottom, #005082 0%, #1D6799 100%);
+	background-image: linear-gradient(to bottom, #005082 0%, #1D6799 100%);
+	color:#fff;
+	margin:0;
+	padding:48px 0;
+}
+h3{
+	color:#666;
+	font-size:30px;
+	font-weight:normal;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+h4{
+	color:#226092;
+	font-size:24px;
+	margin-bottom:20px;
+}
+.main{
+	padding-top:199px;
+}
+.main section{
+	border-bottom:1px solid #ccc;
+	padding:0 0 12px 0;
+}
+.section-nav{
+	background:#fff;
+	border-right:1px dotted #ccc;
+	opacity:0.85;
+	padding:10px 0 0 0;
+}
+.section-nav a{
+	color:#666;
+	text-transform:uppercase;
+}
+.section-nav .active a{
+	color:#236192;
+	font-weight:bold;
+}
