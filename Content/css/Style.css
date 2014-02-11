@@ -71,3 +71,14 @@ h5{
 	color:#236192;
 	font-weight:bold;
 }
+.btn{
+	border-radius:0;
+	border-width:0;
+}
+.btn:hover{
+	text-decoration:underline;
+}
+.btn-primary,
+.btn-primary:hover{
+	background-color:#78BE20;
+}
