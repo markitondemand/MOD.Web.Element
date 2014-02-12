@@ -3,18 +3,18 @@ body{
 }
 .site{
 	background:#fff;
+	border:none;
+	margin:0;
 	width:100%;
 	z-index:1;
 }
-.site h1 .container{
-	background:#fff;
-}
 .site h1{
-	color:#ccc;
-}
-.site h1 em{
-	color:#226092;
-	font-style:normal;
+	background: url(../img/logo.png) left top no-repeat;
+	height: 70px;
+	margin:10px 0;
+	overflow:hidden;
+	text-indent:-9999px;
+	width:241px;
 }
 .site h2{
 	background-image: -webkit-gradient(
@@ -30,8 +30,12 @@ body{
 	background-image: -ms-linear-gradient(bottom, #005082 0%, #1D6799 100%);
 	background-image: linear-gradient(to bottom, #005082 0%, #1D6799 100%);
 	color:#fff;
+	font-size:22px;
 	margin:0;
-	padding:48px 0;
+	padding:24px 0;
+}
+.site .navbar-right li a{
+	line-height:60px;
 }
 h3{
 	color:#666;
@@ -51,7 +55,7 @@ h5{
 	margin:12px 0;
 }
 .main{
-	padding-top:199px;
+	padding-top:162px;
 }
 .main section{
 	border-bottom:1px solid #ccc;
