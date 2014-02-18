@@ -1,12 +1,13 @@
 body{
 	color:#666;
 }
-.site{
-	background:#fff;
-	border:none;
-	margin:0;
-	width:100%;
-	z-index:1;
+.site {
+	background: #fff;
+	border: none;
+	margin: 0;
+	min-width: 492px;
+	width: 100%;
+	z-index: 1;
 }
 .site h1{
 	background: url(../img/logo.png) left top no-repeat;
@@ -85,4 +86,20 @@ h5{
 .btn-primary,
 .btn-primary:hover{
 	background-color:#78BE20;
+}
+/*responsive*/
+@media (max-width: 767px) {
+	.site .navbar-right{
+		float:right;
+	}
+	.site .navbar-nav{
+		margin:0;
+	}
+	.site .navbar-nav li{
+		float:left;
+	}
+	.site h2{
+		white-space:nowrap;
+	}
+	.navbar-scrollspy {display:none;}
 }
