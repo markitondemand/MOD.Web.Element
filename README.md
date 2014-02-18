@@ -10,3 +10,7 @@ Browse to [markitondemand.github.io/MOD.Web.Element](http://markitondemand.githu
 ## Copyright and License
 
 Copyright &copy; 2014 Markit On Demand, Inc. Element is licensed under the Apache License 2.0.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/markitondemand/mod.web.element/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
