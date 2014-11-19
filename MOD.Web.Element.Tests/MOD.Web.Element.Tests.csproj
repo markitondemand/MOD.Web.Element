@@ -57,6 +57,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ElementTests.cs" />
+    <Compile Include="FragmentTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NodeTests.cs">
       <SubType>Code</SubType>
     </Compile>
