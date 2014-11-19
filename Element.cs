@@ -603,6 +603,16 @@ namespace MOD.Web.Element
 	public partial class Element
 	{
 		/// <summary>
+		/// Provides the default value of ~/ as resolved by VirtualPathUtility.ToAbsolute, but
+		/// isn't marked readonly so that an application can change this out on application start.
+		/// This value should be set once for the life of the application -- doing otherwise is
+		/// not defined and will likely not work the way you desire (don't change it while the
+		/// web site is running -- it's intended to be inject with something suitable 
+		/// during unit testing).
+		/// </summary>
+		public static Func<string, string> ResolveUrlProvider = VirtualPathUtility.ToAbsolute; 
+
+		/// <summary>
 		/// Html tags special handling lookup
 		/// </summary>
 		protected static Dictionary<string, SpecialHandling> SpecialHandlingMap = new Dictionary<string, SpecialHandling>(StringComparer.OrdinalIgnoreCase) 
@@ -682,8 +692,9 @@ namespace MOD.Web.Element
 			//Debug.Assert(!String.IsNullOrEmpty(url));
 			if (url.StartsWith("~/"))
 			{
+				var fn = ResolveUrlProvider ?? VirtualPathUtility.ToAbsolute;
 				// ToAbsolute chokes on QueryStrings, so we have to remove it first
-				return VirtualPathUtility.ToAbsolute("~/") + url.Substring(2);
+				return fn("~/") + url.Substring(2);
 			}
 			return url;
 		}

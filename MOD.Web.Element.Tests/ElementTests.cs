@@ -546,88 +546,88 @@ namespace MOD.Web.Element.Tests
 		}
 		#endregion
 
-		//#region Attributes
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Anchor()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		#region Attributes
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Anchor()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("a", "href", "~/");
-		//	Assert.AreEqual("<a href=\"/Testing\"></a>", e.ToString());
-		//}
+			var e = Element.Create("a", "href", "~/");
+			Assert.AreEqual("<a href=\"/Testing\"></a>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Blockquote()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Blockquote()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("blockquote", "cite", "~/");
-		//	Assert.AreEqual("<blockquote cite=\"/Testing\"></blockquote>", e.ToString());
-		//}
+			var e = Element.Create("blockquote", "cite", "~/");
+			Assert.AreEqual("<blockquote cite=\"/Testing\"></blockquote>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Del()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Del()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("del", "cite", "~/");
-		//	Assert.AreEqual("<del cite=\"/Testing\"></del>", e.ToString());
-		//}
+			var e = Element.Create("del", "cite", "~/");
+			Assert.AreEqual("<del cite=\"/Testing\"></del>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Form()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Form()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("form", "action", "~/");
-		//	Assert.AreEqual("<form action=\"/Testing\"></form>", e.ToString());
-		//}
+			var e = Element.Create("form", "action", "~/");
+			Assert.AreEqual("<form action=\"/Testing\"></form>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Iframe()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Iframe()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("iframe", "action", "~/");
-		//	Assert.AreEqual("<iframe action=\"/Testing\"></iframe>", e.ToString());
-		//}
+			var e = Element.Create("iframe", "action", "~/");
+			Assert.AreEqual("<iframe action=\"/Testing\"></iframe>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Img()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Img()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("img", "src", "~/");
-		//	Assert.AreEqual("<img src=\"/Testing\"/>", e.ToString());
-		//}
+			var e = Element.Create("img", "src", "~/");
+			Assert.AreEqual("<img src=\"/Testing\"/>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Input()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Input()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("input", "src", "~/");
-		//	Assert.AreEqual("<input src=\"/Testing\"/>", e.ToString());
-		//}
+			var e = Element.Create("input", "src", "~/");
+			Assert.AreEqual("<input src=\"/Testing\"/>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Ins()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Ins()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("ins", "cite", "~/");
-		//	Assert.AreEqual("<ins cite=\"/Testing\"></ins>", e.ToString());
-		//}
+			var e = Element.Create("ins", "cite", "~/");
+			Assert.AreEqual("<ins cite=\"/Testing\"></ins>", e.ToString());
+		}
 
-		//[Test]
-		//public void AddAttribute_SpecialHandlingLink_Link()
-		//{
-		//	Element.ResolveUrlProvider = url => "/Testing";
+		[Test]
+		public void AddAttribute_SpecialHandlingLink_Link()
+		{
+			Element.ResolveUrlProvider = url => "/Testing";
 
-		//	var e = Element.Create("link", "href", "~/");
-		//	Assert.AreEqual("<link href=\"/Testing\"/>", e.ToString());
-		//}
-		//#endregion
+			var e = Element.Create("link", "href", "~/");
+			Assert.AreEqual("<link href=\"/Testing\"/>", e.ToString());
+		}
+		#endregion
 
 		#region Create
 		[Test]
