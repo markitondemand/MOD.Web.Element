@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MOD.Web.Element.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Wall Street On Demand, Inc")]
+[assembly: AssemblyCompany("Markit On Demand, Inc")]
 [assembly: AssemblyProduct("MOD.Web.Element.Tests")]
-[assembly: AssemblyCopyright("Copyright © Wall Street On Demand, Inc 2014")]
+[assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

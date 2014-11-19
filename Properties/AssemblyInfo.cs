@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Markit On Demand, Inc")]
 [assembly: AssemblyProduct("Element")]
-[assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2013")]
+[assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
