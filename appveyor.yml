@@ -12,6 +12,7 @@ before_build:
 build:
   project: MOD.Web.Element.sln
   verbosity: minimal
+  publish_nuget: true
 
 nuget:
   account_feed: true
