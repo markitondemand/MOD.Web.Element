@@ -1,7 +1,33 @@
+#
+# For more details, see http://www.appveyor.com/docs/appveyor-yml
+#
 version: 1.0.{build}
+# don't build on tags
+skip_tags: true
+# always build in Release mode
 configuration: Release
+# restore the nuget packages prior to attempting a build
 before_build:
 - nuget restore
 build:
   project: MOD.Web.Element.sln
   verbosity: minimal
+
+nuget:
+  account_feed: true
+  # disable the project feed since we will be sending the package to Nuget.org
+  project_feed: false
+  # do not publish a nuget package for pull requests
+  disable_publish_on_pr: true
+
+deploy:
+	# Deploying to NuGet feed
+  - provider: NuGet
+  	# commenting out the below so that this goes to Nuget.org
+    #server: https://my.nuget.server/feed
+    api_key:
+      secure: foobar
+    # not sure about publishing symbols at this time...
+    skip_symbols: true
+    #symbol_server: https://your.symbol.server/feed
+    artifact: MOD.Web.Element.nupkg
