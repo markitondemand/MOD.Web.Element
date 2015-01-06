@@ -21,12 +21,13 @@ nuget:
   disable_publish_on_pr: true
 
 deploy:
-	# Deploying to NuGet feed
+  # Deploying to NuGet feed
   - provider: NuGet
-  	# commenting out the below so that this goes to Nuget.org
+    # commenting out the below so that this goes to Nuget.org
     #server: https://my.nuget.server/feed
     api_key:
-      secure: foobar
+      # see https://ci.appveyor.com/tools/encrypt
+      secure: Y3tfv+WMI1ujvFWb8/r6Dl9OD+SgZRv/86BuTOaFHbX+7UBe42rvnejZcTjqI2fY
     # not sure about publishing symbols at this time...
     skip_symbols: true
     #symbol_server: https://your.symbol.server/feed
