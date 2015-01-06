@@ -42,6 +42,6 @@ deploy:
     #symbol_server: https://your.symbol.server/feed
     artifact: MOD.Web.Element.nupkg
 
-# temporary artifacts for debugging
-artifacts:
-  - path: Properties/AssemblyInfo.*
+# cache these files in order to decrease build time
+cache:
+  - packages
