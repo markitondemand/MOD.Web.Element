@@ -18,9 +18,9 @@ build:
 assembly_info:
   patch: true
   file: 'Properties\AssemblyInfo.cs'
-  assembly_version: '{appveyor_build_version}'
-  assembly_file_version: '{appveyor_build_version}'
-  assembly_informational_version: '{appveyor_build_version}'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 
 nuget:
   account_feed: true
