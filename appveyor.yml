@@ -17,7 +17,7 @@ build:
 # enable patching of AssemblyInfo.* files
 assembly_info:
   patch: true
-  file: AssemblyInfo.*
+  file: Properties/AssemblyInfo.*
   assembly_version: "{version}"
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
@@ -41,3 +41,7 @@ deploy:
     skip_symbols: true
     #symbol_server: https://your.symbol.server/feed
     artifact: MOD.Web.Element.nupkg
+
+# temporary artifacts for debugging
+artifacts:
+  - path: Properties/AssemblyInfo.*
