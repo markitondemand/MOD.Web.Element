@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>MOD.Web.Element</id>
+		<title>MOD.Web.Element</title>
+		<version>$version$</version>
+		<authors>Markit On Demand</authors>
+		<owners>Markit On Demand</owners>
+		<description>An Object Oriented, MVC-friendly approach to rendering HTML in C#.</description>
+		<licenseUrl>https://github.com/markitondemand/MOD.Web.Element#copyright-and-license</licenseUrl>
+		<projectUrl>http://markitondemand.github.io/MOD.Web.Element/</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<copyright>Copyright 2015</copyright>
+		<iconUrl>http://markitondemand.github.io/MOD.Web.Element/Content/img/logo.png</iconUrl>
+	</metadata>
+	<files>
+		<file src="bin\Release\*" target="lib\net35" />
+		<file src="bin\Release\*" target="lib\net45" />
+	</files>
+</package>
