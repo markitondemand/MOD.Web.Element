@@ -3,7 +3,7 @@
 	<metadata>
 		<id>MOD.Web.Element</id>
 		<title>MOD.Web.Element</title>
-		<version>1.0.0</version>
+		<version>$version$</version>
 		<authors>Markit On Demand</authors>
 		<owners>Markit On Demand</owners>
 		<description>An Object Oriented, MVC-friendly approach to rendering HTML in C#.</description>

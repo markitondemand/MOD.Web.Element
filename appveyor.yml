@@ -14,6 +14,14 @@ build:
   verbosity: minimal
   publish_nuget: true
 
+# enable patching of AssemblyInfo.* files
+assembly_info:
+  patch: true
+  file: AssemblyInfo.*
+  assembly_version: "{version}"
+  assembly_file_version: "{version}"
+  assembly_informational_version: "{version}"
+
 nuget:
   account_feed: true
   # disable the project feed since we will be sending the package to Nuget.org
