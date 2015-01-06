@@ -40,7 +40,7 @@ deploy:
     # not sure about publishing symbols at this time...
     skip_symbols: true
     #symbol_server: https://your.symbol.server/feed
-    artifact: MOD.Web.Element.nupkg
+    artifact: /.*\.nupkg/
 
 # cache these files in order to decrease build time
 cache:
