@@ -1,19 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace MOD.Web.Element.Modules
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	public abstract class HtmlDocument : ViewModule
 	{
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual Element Body { get; set; }
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual Element Head { get; set; }
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual string Title { get; set; }
+
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual string Language { get; set; }
+
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual string Charset { get; set; }
 
+		/// <summary>
+		/// 
+		/// </summary>
 		public virtual IRenderable PageView { get; set; }
 
 		/// <summary>

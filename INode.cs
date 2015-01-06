@@ -10,6 +10,10 @@ namespace MOD.Web.Element
 	/// </summary>
 	public interface INode
 	{
+		/// <summary>
+		/// Converts the node to a string.
+		/// </summary>
+		/// <param name="sb"></param>
 		void ToString(StringBuilder sb);
 	}
 }

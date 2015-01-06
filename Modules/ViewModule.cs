@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace MOD.Web.Element.Modules
 {
+	/// <summary>
+	/// 
+	/// </summary>
 	public class ViewModule : IRenderable
 	{
+		/// <summary>
+		/// 
+		/// </summary>
 		protected Element _Container = null;
+
 		/// <summary>
 		/// The Element that represents markup for the module.
 		/// </summary>
@@ -16,6 +19,11 @@ namespace MOD.Web.Element.Modules
 			get { return _Container = _Container ?? CreateContainer(); }
 			set { _Container = value; }
 		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <returns></returns>
 		public virtual Node Render() { return Container; }
 
 		/// <summary>

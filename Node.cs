@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 namespace MOD.Web.Element
 {
@@ -10,7 +7,15 @@ namespace MOD.Web.Element
 	/// </summary>
 	public class Node : INode
 	{
+		/// <summary>
+		/// A link to the parent node.
+		/// </summary>
 		public Node Parent;
+
+		/// <summary>
+		/// Renders the Node as a string.  Left virtual for child classes to implement.
+		/// </summary>
+		/// <param name="sb"></param>
 		public virtual void ToString(StringBuilder sb) { }
 	}
 }

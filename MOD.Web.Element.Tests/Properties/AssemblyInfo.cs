@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Element")]
+[assembly: AssemblyTitle("MOD.Web.Element.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Markit On Demand, Inc")]
-[assembly: AssemblyProduct("Element")]
+[assembly: AssemblyProduct("MOD.Web.Element.Tests")]
 [assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("97da175b-c19e-43e3-bf3b-8ee86834a42c")]
+[assembly: Guid("57e41625-a542-41c6-b2b8-f5c5fbb57b05")]
 
 // Version information for an assembly consists of the following four values:
 //
