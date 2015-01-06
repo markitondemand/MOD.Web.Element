@@ -8,7 +8,7 @@
 		<owners>Markit On Demand</owners>
 		<description>An Object Oriented, MVC-friendly approach to rendering HTML in C#.</description>
 		<licenseUrl>https://github.com/markitondemand/MOD.Web.Element#copyright-and-license</licenseUrl>
-		<projectUrl>https://github.com/markitondemand/MOD.Web.Element</projectUrl>
+		<projectUrl>http://markitondemand.github.io/MOD.Web.Element/</projectUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<copyright>Copyright 2015</copyright>
 		<iconUrl>http://markitondemand.github.io/MOD.Web.Element/Content/img/logo.png</iconUrl>
