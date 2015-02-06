@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Markit On Demand, Inc")]
 [assembly: AssemblyProduct("MOD.Web.Element.Tests")]
-[assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2014")]
+[assembly: AssemblyCopyright("Copyright © Markit On Demand, Inc 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("57e41625-a542-41c6-b2b8-f5c5fbb57b05")]
+[assembly: Guid("fd270113-3ba7-4ebf-9d14-565a7c868010")]
 
 // Version information for an assembly consists of the following four values:
 //
