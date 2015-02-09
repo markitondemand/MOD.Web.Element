@@ -62,6 +62,14 @@ namespace MOD.Web.Element
 			Write(sw);
 			return sw.ToString();
 		}
+
+		/// <summary>
+		/// Returns the output as a string. Same as calling ToString();
+		/// </summary>
+		public string ToHtmlString()
+		{
+			return this.ToString();
+		}
 		
 		/// <summary>
 		/// Buffer size in bytes. Only used with a TextReader

@@ -45,5 +45,13 @@ namespace MOD.Web.Element
 			Write(sw);
 			return sw.ToString();
 		}
+
+		/// <summary>
+		/// Returns the html representation of the node and it's children. Same as calling ToString();
+		/// </summary>
+		public virtual string ToHtmlString()
+		{
+			return this.ToString();
+		}
 	}
 }

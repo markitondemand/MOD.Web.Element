@@ -68,5 +68,13 @@ namespace MOD.Web.Element
 			}
 			return "";
 		}
+
+		/// <summary>
+		/// Returns the output as a string. Same as calling ToString();
+		/// </summary>
+		public string ToHtmlString()
+		{
+			return this.ToString();
+		}
 	}
 }

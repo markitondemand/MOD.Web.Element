@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Web;
 
 namespace MOD.Web.Element
 {
 	/// <summary>
 	/// INode is the basis for all other nodes.
 	/// </summary>
-	public interface INode
+	public interface INode : IHtmlString
 	{
 		/// <summary>
 		/// All nodes must be writeable.
